@@ -1,54 +1,36 @@
-# React + TypeScript + Vite
+# Propuesta React 💖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una propuesta interactiva y personalizable hecha con React, TypeScript y Vite. Incluye animaciones, efectos visuales y la posibilidad de agregar tu propio mensaje, imágenes y música.
 
-Currently, two official plugins are available:
+## ¿Qué hace?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Muestra una pregunta especial con botones de respuesta.
+- El botón "Sí" crece cada vez que se presiona "No".
+- Al aceptar, aparece un mensaje personalizado, confeti, un gif y un reproductor de música de Spotify.
+- Fondo pastel y diseño moderno.
 
-## Expanding the ESLint configuration
+## ¿Cómo usarlo para tu propia propuesta?
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/ttiziu/Propuesta.git
+   cd Propuesta
+   ```
+2. **Personaliza:**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+   - Cambia los textos en `src/App.tsx`.
+   - Reemplaza los gifs en `src/assets/` por los tuyos.
+   - Cambia el enlace de Spotify por tu canción favorita.
+   - Modifica colores y estilos en `src/App.css`.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. **Despliega en Vercel o Netlify:**
+   Puedes subirlo gratis en [Vercel](https://vercel.com/) o [Netlify](https://www.netlify.com/). Solo importa el repositorio y sigue las instrucciones de la plataforma.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Créditos
+
+- Hecho con 💖 por Jherry Visalot
+- Basado en React + Vite
+
+¡Disfruta y haz tu propia propuesta inolvidable!
