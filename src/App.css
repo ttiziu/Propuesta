@@ -1,0 +1,141 @@
+body, html, #root {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ffd1e3;
+}
+
+.pastel-background {
+  min-height: 100vh;
+  min-width: 100vw;
+  width: 100vw;
+  height: 100vh;
+  background: #ffd1e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.pregunta, .mensaje-final {
+  color: #d16ba5;
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+  text-align: center;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.mensaje-final {
+  margin-top: 0.2rem;
+}
+
+.gif-central {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 rgba(34, 34, 34, 0.1);
+  z-index: 1;
+}
+
+.botones-respuesta {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+
+.btn-si, .btn-no, .btn-musica {
+  padding: 0.7em 2.2em;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 2em;
+  background: #fff0f6;
+  color: #d16ba5;
+  font-weight: bold;
+  box-shadow: 0 2px 12px 0 rgba(34, 34, 34, 0.08);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  position: relative;
+  z-index: 3;
+}
+
+.btn-si {
+  /* Permite que el botón crezca sin límites y se superponga */
+  will-change: transform;
+}
+
+.btn-si:hover {
+  background: #d16ba5;
+  color: #fff;
+  transform: scale(1.07) !important;
+}
+
+.btn-no:hover {
+  background: #f8bbd0;
+  color: #fff;
+  transform: scale(1.07);
+}
+
+.btn-musica {
+  margin-bottom: 2rem;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.btn-musica:hover {
+  background: #d16ba5;
+  color: #fff;
+  transform: scale(1.07);
+}
+
+.fade-in {
+  animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.footer-jherry {
+  position: fixed;
+  left: 1.5rem;
+  bottom: 1.2rem;
+  color: #d16ba5;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  opacity: 0.8;
+  z-index: 10000;
+  user-select: none;
+}
+
+.darken-bg {
+  animation: darkenFadeIn 0.5s;
+  background: linear-gradient(120deg, #232323 80%, #444 100%) !important;
+  transition: background 0.5s;
+}
+
+@keyframes darkenFadeIn {
+  from {
+    background: #ffd1e3;
+  }
+  to {
+    background: #232323;
+  }
+}
