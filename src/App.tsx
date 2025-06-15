@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="pastel-background">
       <div className="center-content">
-        <h1 className="pregunta">Me permitirias tu mi melocotoncito, ser tu novio?</h1>
+        <h1 className="pregunta">Me permitirias tu, mi melocotoncito, ser tu novio?</h1>
         <div className="botones-respuesta">
           <button
             className="btn-si"
