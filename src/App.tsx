@@ -16,7 +16,7 @@ function App() {
     return (
       <div className={`pastel-background fade-in${mostrarMusica ? ' darken-bg' : ''}`}>
         <div className="center-content">
-          <h1 className="pregunta">¡Sabía que dirías que sí!</h1>
+          <h1 className="pregunta">¡Sabía que dirías que sí mi ñam!</h1>
           <h2 className="mensaje-final">¡Eres mi melocotoncito!</h2>
           {!mostrarMusica && (
             <button className="btn-musica" onClick={() => setMostrarMusica(true)}>
@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="pastel-background">
       <div className="center-content">
-        <h1 className="pregunta">Me permitirias tu, mi melocotoncito, ser tu novio?</h1>
+        <h1 className="pregunta">Me permitirias tú, mi melocotoncito, ser tu novio?</h1>
         <div className="botones-respuesta">
           <button
             className="btn-si"
